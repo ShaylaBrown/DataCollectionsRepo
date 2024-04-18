@@ -20,6 +20,13 @@ let table = csvStr.join(",");
 console.log(table);
 
 /////////
-let numColumns = ["ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26"]
+const numColumns = ['ID', 'Name', 'Occupation', 'Age']
+const numColums2 = numColumns[0];
+console.log(numColumns.length);
 
+numColumns.length = 4
+console.log(numColumns);
 
+for (let i = 0; i < numColumns.length; i++) {
+    console.log(numColumns[i]);
+}
