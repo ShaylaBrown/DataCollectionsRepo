@@ -23,21 +23,12 @@ console.log(table);
 // }
 // Part 2 Expanding Functionality
 
-const numColumns = ['ID', 'Name', 'Occupation', 'Age']
+const numColumns = ['ID', 'Name', 'Occupation', 'Age',]
 numColumns.length = 4
 console.log(numColumns);
-for (let i = 0; i < numColumns.length; i++) {
-	console.log(numColumns[i]);
-}
 
 
-
-
-
-
-
-
-
+//BELOW ARE ALL OF MY ATTEMPTS AND THEN A SECOND POSSIBLE SOLUTION TO PART 2
 
 // const numColumns1 = ['42', 'Bruce', 'Knight', '41']
 // numColumns1.length = 4
@@ -58,7 +49,7 @@ for (let i = 0; i < numColumns.length; i++) {
 // // for (let i = 0; i < allcolumns; i++) {
 // 	console.log(allcolumns[i]);
 // }
-    // let allcolumns = [
+// let allcolumns = [
 //     ["ID", "Name", "Occupation", "Age"],
 //     ["42", "Bruce", "Knight", "41"],
 //     ["57", "Bob", "Fry Cook", "19"],
@@ -66,18 +57,15 @@ for (let i = 0; i < numColumns.length; i++) {
 //     ["98", "Bill", "Doctor’s Assistant", "26"]
 // ];
 // console.log (allcolumns)
-   
-   
-   
-   
-   
+
+
 //     const ID = ["42", "57", "63", "98"]
 //     const Name = ["Bruce", "Bob", "Blaine", "Bill"]
 //     const Occupation = ["Knight", "Fry Cook", "Quiz Master", "Doctor's Assistant"]
 //     const Age = ["41","19","58","26"]
-    
+
 //     const allcolumns1 = []
-    
+
 //     ID.forEach((n, i) => {
 //         allcolumns1.push(
 //         {
@@ -88,11 +76,70 @@ for (let i = 0; i < numColumns.length; i++) {
 //         }
 //       )
 //     })
-    
+
 //     console.log(allcolumns1);
-    
-    objects = {}
-        [{ id: "42", name: "Bruce", occupation: "Knight", age: "41" },
-        { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" },
-        { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" },
-        { id: "98", name: "Bill", occupation: "Doctor’s Assistant", age: "26" }];
+
+
+
+
+const str = ['ID', 'Name', 'Occupation', 'Age']
+const Name = ["Bruce", "Bob", "Blaine", "Bill"]
+const Occupation = ["Knight", "Fry Cook", "Quiz Master", "Doctor's Assistant"]
+const Age = ["41", "19", "58", "26"]
+let all = str.concat(Name, Occupation, Age); 
+
+let numOfCols = 0;
+let currentRow = 1
+
+const rowArr = []
+
+for (let i = 0; i < all.length; i++) {
+
+    if (all[i] === '*') {
+        currentRow++
+        continue
+    }
+
+    if (all[i] === ',') {
+        continue; // this allows us to skip the iteration and not be able to reach the push statement below 
+    }
+//  lines = all.split()
+
+    rowArr.push(all[i])
+    numOfCols++
+}
+
+console.log(rowArr, numOfCols)
+
+//Part 3 //I can not figure how to get this result without hard coding.  I tried spliting the above formulas into differnt rows but I can not.
+let array = 
+[["ID", "Name", "Occupation", "Age"], 
+["42", "Bruce", "Knight", "41"], 
+["57", "Bob", "Fry Cook", "19"], 
+["63", "Blaine", "Quiz Master", "58"], 
+["98", "Bill", "Doctor’s Assistant", "26"]]
+
+//Part 4 I can not figure how to get this result.
+
+// const obj = {array}
+// console.log (obj.keys)
+
+// Input array
+let arr = [["ID", "Name", "Occupation", "Age"], 
+["42", "Bruce", "Knight", "41"], 
+["57", "Bob", "Fry Cook", "19"], 
+["63", "Blaine", "Quiz Master", "58"], 
+["98", "Bill", "Doctor’s Assistant", "26"]]
+let obj = Object.fromEntries(arr);
+console.log(obj);
+
+//Hard coded 
+objects1 = {}
+[{ id: "42", name: "Bruce", occupation: "Knight", age: "41" },
+{ id: "57", name: "Bob", occupation: "Fry Cook", age: "19" },
+{ id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" },
+{ id: "98", name: "Bill", occupation: "Doctor’s Assistant", age: "26" }];
+console.log(objects1)
+//Part 5
+
+
