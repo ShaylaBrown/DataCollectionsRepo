@@ -23,29 +23,39 @@ console.log(table);
 // }
 // Part 2 Expanding Functionality
 
-
-
 const numColumns = ['ID', 'Name', 'Occupation', 'Age']
 numColumns.length = 4
 console.log(numColumns);
+for (let i = 0; i < numColumns.length; i++) {
+	console.log(numColumns[i]);
+}
 
-const numColumns1 = ['42', 'Bruce', 'Knight', '41']
-numColumns1.length = 4
-console.log(numColumns1);
-const numColumns2 = ['57', 'Bob', 'Fry Cook', '19']
-numColumns2.length = 4
-console.log(numColumns2);
-const numColumns3 = ['63', 'Blaine', 'Quiz Master', '58']
-numColumns3.length = 4
-console.log(numColumns3);
-const numColumns4 = ['98', 'Bill', 'Doctor\'s Assistant', '26']
-numColumns4.length = 4
-console.log(numColumns4);
-// let array = [numColumns + numColumns1+ numColumns2 ];
-// let csv = array.split(", ");
-// console.log(csv[0]);
-// let allcolumns = numColumns3 + numColumns4
-// for (let i = 0; i < allcolumns; i++) {
+
+
+
+
+
+
+
+
+
+// const numColumns1 = ['42', 'Bruce', 'Knight', '41']
+// numColumns1.length = 4
+// console.log(numColumns1);
+// const numColumns2 = ['57', 'Bob', 'Fry Cook', '19']
+// numColumns2.length = 4
+// console.log(numColumns2);
+// const numColumns3 = ['63', 'Blaine', 'Quiz Master', '58']
+// numColumns3.length = 4
+// console.log(numColumns3);
+// const numColumns4 = ['98', 'Bill', 'Doctor\'s Assistant', '26']
+// numColumns4.length = 4
+// console.log(numColumns4);
+// // let array = [numColumns + numColumns1+ numColumns2 ];
+// // let csv = array.split(", ");
+// // console.log(csv[0]);
+// // let allcolumns = numColumns3 + numColumns4
+// // for (let i = 0; i < allcolumns; i++) {
 // 	console.log(allcolumns[i]);
 // }
     // let allcolumns = [
@@ -86,6 +96,3 @@ console.log(numColumns4);
         { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" },
         { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" },
         { id: "98", name: "Bill", occupation: "Doctor’s Assistant", age: "26" }];
-
-
-     
